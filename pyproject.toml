@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "qml"
+version = "0.1.0"
+description = "Exploring quantum machine learning"
+authors = ["Marcus Lee <marcustutorial@hotmail.com>"]
+readme = "README.md"
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+numpy = "^1.26.3"
+polars = "^0.20.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
