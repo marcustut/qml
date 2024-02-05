@@ -1,4 +1,5 @@
 import polars as pl
+from sklearn.model_selection import train_test_split
 
 DATASET_PATH = "datasets/iris.csv"
 
