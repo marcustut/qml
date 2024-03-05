@@ -20,8 +20,13 @@ matplotlib = "^3.8.2"
 torch = "^2.2.0"
 torchvision = "^0.17.0"
 yfinance = "^0.2.37"
+notebook = "^7.1.1"
 
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[[tool.mypy.overrides]]
+module = "yfinance.*"
+ignore_missing_imports = true

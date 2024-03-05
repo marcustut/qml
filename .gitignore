@@ -1,3 +1,4 @@
 pyrightconfig.json
 .DS_Store
 .mypy_cahce/
+.ipynb_checkpoints/
