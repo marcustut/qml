@@ -31,9 +31,14 @@ After reading a few papers [[1](#1), [2](#2)] and looking at several online reso
 
 The plan is to first train a simple GAN classically using the [MNIST](https://archive.ics.uci.edu/dataset/683/mnist+database+of+handwritten+digits) dataset with the goal of generating handwritten digits images. Then with the help of PennyLane, replace parts of the classical code to use quantum circuits to turn the model into a qGAN.
 
+- [Qiskit Torch Connector and Hybrid QNNs with MNIST](https://qiskit-community.github.io/qiskit-machine-learning/tutorials/05_torch_connector.html)
+- [Quantum Restricted Boltzmann Machines on MNIST](https://github.com/mareksubocz/QRBM-qiskit/blob/master/machine-learning-qiskit-pytorch-fixed-working-copy-3-digits-try.ipynb)
+
 ### Phase 2
 
 Construct an Option Pricing model to with GAN using historical price data then similar to Phase 1, use PennyLane to turn that model to a qGAN.
+
+- [Deep Learning for Option Pricing](https://blog.dataiku.com/using-deep-learning-for-better-option-pricing)
 
 ## References
 
