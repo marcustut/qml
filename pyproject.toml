@@ -30,3 +30,7 @@ build-backend = "poetry.core.masonry.api"
 [[tool.mypy.overrides]]
 module = "yfinance.*"
 ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = "sklearn.*"
+ignore_missing_imports = true

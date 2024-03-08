@@ -27,18 +27,49 @@ However, after achieving it classically I realised that this problem can be solv
 
 After reading a few papers [[1](#1), [2](#2)] and looking at several online resources [[3](#3), [4](#4)] I found that there were successful records of translating GANs into the quantum space and it is definitely a more sophiscated problem than mere optimisation. Since GANs is a variation of neural networks it involves learning usually through backpropagation that minimises the loss function, that implies that in order to achieve GANs in the quantum world, it is essential to implement a learning algorithm suitable in the quantum space and exploring how quantum learning works is a good enough reason for me to consider this problem.
 
-### Phase 1
+For a more detailed plan on transforming the GAN models to the quantum space, refer [Quantum Plan](/quantum_plan.md).
+
+### Phase 1 - Image Generation (MNIST)
+
+#### Objective
+
+The goal in this phase is to learn and familiarise myself with the concept of GANs and how to practically implement it in code, I chose MNIST simply because it is popular and there are plenty resources about it.
+
+#### Plan
 
 The plan is to first train a simple GAN classically using the [MNIST](https://archive.ics.uci.edu/dataset/683/mnist+database+of+handwritten+digits) dataset with the goal of generating handwritten digits images. Then with the help of PennyLane, replace parts of the classical code to use quantum circuits to turn the model into a qGAN.
+
+#### Notebooks
+
+- [Letter Generation with MNIST using GAN](/notebooks/mnist/mnist_gan.ipynb)
+
+#### Resources
 
 - [Qiskit Torch Connector and Hybrid QNNs with MNIST](https://qiskit-community.github.io/qiskit-machine-learning/tutorials/05_torch_connector.html)
 - [Quantum Restricted Boltzmann Machines on MNIST](https://github.com/mareksubocz/QRBM-qiskit/blob/master/machine-learning-qiskit-pytorch-fixed-working-copy-3-digits-try.ipynb)
 
-### Phase 2
+### Phase 2 - Stock Prediction
 
-Construct an Option Pricing model to with GAN using historical price data then similar to Phase 1, use PennyLane to turn that model to a qGAN.
+#### Objective
 
+Once I grasp the key ideas of GANs then apply the knowledge I gain to implenet a GAN model for predicting stock price. 
+
+#### Plan
+
+Construct a pricing model with GAN using historical price data then similar to Phase 1, use PennyLane to turn that model into a qGAN.
+
+#### Notebooks
+
+- [Stock Correlation Test](/notebooks/stock/stock_selection.ipynb)
+- [Stock Price Prediction with GAN](/notebooks/stock/stock_gan.ipynb)
+- [Black Scholes Model](/notebooks/stock/black_scholes.ipynb)
+
+#### Resources
+
+- [Time series quantum classifiers with amplitude embedding](https://link.springer.com/article/10.1007/s42484-023-00133-0#:~:text=In%20this%20work%2C%20we%20encode,2%5En%20with%20unitary%20norm.)
 - [Deep Learning for Option Pricing](https://blog.dataiku.com/using-deep-learning-for-better-option-pricing)
+- [QGan Qiskit](https://github.com/Qiskit/textbook/blob/main/notebooks/quantum-machine-learning/qgan.ipynb)
+- [Quantum Machine Learning in Finance: Time Series Forecasting](https://arxiv.org/abs/2202.00599)
 
 ## References
 
