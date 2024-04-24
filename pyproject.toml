@@ -21,6 +21,13 @@ torch = "^2.2.0"
 torchvision = "^0.17.0"
 yfinance = "^0.2.37"
 notebook = "^7.1.1"
+qiskit = "^1.0.2"
+pylatexenc = "^2.10"
+qiskit-aer = "^0.14.0.1"
+qiskit-machine-learning = "^0.7.2"
+seaborn = "^0.13.2"
+azure-quantum = {extras = ["qiskit"], version = "^2.0.0"}
+qiskit-ibm-runtime = "^0.23.0"
 
 
 [build-system]
